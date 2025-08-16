@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Page with Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to the Enhanced HTML5 Page</h1>
+    <p>This page demonstrates lists, tables, media, and a fully featured HTML5 form with built-in validation.</p>
+  </header>
+
+  <main>
+    <!-- Lists Section -->
+    <section>
+      <h2>Popular Web Technologies</h2>
+      <p>Here is an example of ordered and unordered lists:</p>
+
+      <h3>Unordered List</h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+      </ul>
+
+      <h3>Ordered List</h3>
+      <ol>
+        <li>Learn HTML</li>
+        <li>Master CSS</li>
+        <li>Practice JavaScript</li>
+        <li>Explore Frameworks</li>
+      </ol>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+      <h2>Web Development Comparison Table</h2>
+      <p>The following table shows the comparison of different technologies:</p>
+
+      <table border="1">
+        <caption>Feature Comparison of Front-End Frameworks</caption>
+        <thead>
+          <tr>
+            <th>Framework</th>
+            <th>Language</th>
+            <th>Popularity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>React</td>
+            <td>JavaScript</td>
+            <td>High</td>
+          </tr>
+          <tr>
+            <td>Angular</td>
+            <td>TypeScript</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td>Vue</td>
+            <td>JavaScript</td>
+            <td>High</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+      <h2>Embedded Media</h2>
+      <p>Here we embed an image, an audio clip, and a video using HTML5 semantic elements:</p>
+
+      <figure>
+        <img src="https://via.placeholder.com/400x200" alt="Placeholder Example Image">
+        <figcaption>A sample image included with semantic HTML.</figcaption>
+      </figure>
+
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <video controls width="400">
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- HTML5 Form Section -->
+    <section>
+      <h2>Registration Form</h2>
+      <p>Please fill out the form below. All fields marked with * are required.</p>
+
+      <form action="#" method="post" autocomplete="on">
+        
+        <!-- Personal Information -->
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name*:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+          <br><br>
+
+          <label for="email">Email*:</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+          <br><br>
+
+          <label for="dob">Date of Birth*:</label>
+          <input type="date" id="dob" name="dob" required>
+          <br><br>
+        </fieldset>
+
+        <!-- Account Information -->
+        <fieldset>
+          <legend>Account Information</legend>
+
+          <label for="username">Username*:</label>
+          <input type="text" id="username" name="username" required minlength="4" maxlength="15">
+          <br><br>
+
+          <label for="password">Password*:</label>
+          <input type="password" id="password" name="password" required minlength="6" 
+                 pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+                 title="Password must be at least 6 characters long and include at least one number.">
+          <br><br>
+
+          <label for="confirm-password">Confirm Password*:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required minlength="6">
+          <br><br>
+        </fieldset>
+
+        <!-- Preferences -->
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label for="role">Select Role*:</label>
+          <select id="role" name="role" required>
+            <option value="">--Choose an option--</option>
+            <option value="student">Student</option>
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+          </select>
+          <br><br>
+
+          <label>Subscribe to Newsletter:</label>
+          <input type="radio" id="yes" name="newsletter" value="yes" checked>
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="newsletter" value="no">
+          <label for="no">No</label>
+          <br><br>
+
+          <label for="website">Personal Website:</label>
+          <input type="url" id="website" name="website" placeholder="https://example.com">
+          <br><br>
+        </fieldset>
+
+        <!-- Controls -->
+        <fieldset>
+          <legend>Submission</legend>
+          <input type="reset" value="Reset Form">
+          <input type="submit" value="Submit Form">
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Enhanced HTML5 Page Example</p>
+  </footer>
+
+</body>
+  </html>
