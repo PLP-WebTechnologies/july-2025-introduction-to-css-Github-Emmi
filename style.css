@@ -1,0 +1,179 @@
+/* ========================
+   Global Reset & Base Styles
+   ======================== */
+* {
+  box-sizing: border-box; /* Ensures padding + border included in width */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+/* ========================
+   Header
+   ======================== */
+header {
+  text-align: center;
+  background-color: #004080;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* ========================
+   Section Styling
+   ======================== */
+section {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+section h2 {
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+section p {
+  margin-bottom: 15px;
+}
+
+/* ========================
+   Lists
+   ======================== */
+ul, ol {
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+
+li {
+  padding: 4px 0;
+}
+
+/* ========================
+   Tables
+   ======================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #004080;
+  color: #fff;
+}
+
+/* ========================
+   Media
+   ======================== */
+figure {
+  margin: 15px 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+img, video {
+  max-width: 100%;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+/* ========================
+   Forms
+   ======================== */
+form {
+  display: block;
+  margin-top: 15px;
+}
+
+fieldset {
+  border: 1px solid #004080;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+legend {
+  font-weight: bold;
+  color: #004080;
+}
+
+label {
+  display: block;
+  margin: 8px 0 4px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 6px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: auto;
+  background-color: #004080;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #003060;
+}
+
+/* ========================
+   Footer
+   ======================== */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  background: #004080;
+  color: #fff;
+  border-radius: 6px;
+}
